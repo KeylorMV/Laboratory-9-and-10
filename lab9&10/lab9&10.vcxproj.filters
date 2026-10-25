@@ -27,6 +27,9 @@
     <ClCompile Include="Butterfly.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="ant.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="insect.h">
@@ -38,5 +41,11 @@
     <ClInclude Include="Butterfly.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="ant.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\Laboratorios_9_y_10_Insectos_COMPLETO.zip" />
   </ItemGroup>
 </Project>

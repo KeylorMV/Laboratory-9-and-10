@@ -139,15 +139,20 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ant.cpp" />
     <ClCompile Include="Butterfly.cpp" />
     <ClCompile Include="FlyingInsect.cpp" />
     <ClCompile Include="insect.cpp" />
     <ClCompile Include="lab9&amp;10.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ant.h" />
     <ClInclude Include="Butterfly.h" />
     <ClInclude Include="FlyingInsect.h" />
     <ClInclude Include="insect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\Laboratorios_9_y_10_Insectos_COMPLETO.zip" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
