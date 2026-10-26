@@ -2,7 +2,6 @@
 #include "Insect.h"
 #include "List.h"
 
-// Colony es la duena de todos los insectos almacenados en su lista.
 class Colony {
 private:
     List<Insect*> insects;

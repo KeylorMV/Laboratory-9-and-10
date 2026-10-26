@@ -142,7 +142,6 @@
     <ClCompile Include="ant.cpp" />
     <ClCompile Include="beetle.cpp" />
     <ClCompile Include="Butterfly.cpp" />
-    <ClCompile Include="colony.cpp" />
     <ClCompile Include="FlyingInsect.cpp" />
     <ClCompile Include="insect.cpp" />
     <ClCompile Include="lab9&amp;10.cpp" />
@@ -151,7 +150,6 @@
     <ClInclude Include="ant.h" />
     <ClInclude Include="beetle.h" />
     <ClInclude Include="Butterfly.h" />
-    <ClInclude Include="colony.h" />
     <ClInclude Include="FlyingInsect.h" />
     <ClInclude Include="insect.h" />
   </ItemGroup>

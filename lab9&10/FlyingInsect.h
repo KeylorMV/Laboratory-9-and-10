@@ -6,9 +6,9 @@ protected:
 	float wingSpan;
 
 public:
-	FlyingInsect(std::string name, int weight, int lifespanDays, std::string color, float wingSpan);
-	void move() override;
+	FlyingInsect(const std::string& name, int weight, int lifespanDays, const std::string& color, float wingSpan);
 
-	void describe()override;
+	void move() const override;
+	void describe() const override;
 };
 

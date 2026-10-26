@@ -1,25 +1,22 @@
 #include "Butterfly.h"
+#include <iostream>
+
 using namespace std;
-Butterfly::Butterfly(string name, int weight, int lifespanDays, string color, float wingSpan, bool migratory) : FlyingInsect(name, weight, lifespanDays, color, wingSpan) {
-	this->migratory = migratory;
+
+Butterfly::Butterfly(const string& name, int weight, int lifespanDays, const string& color, float wingSpan, bool migratory)
+    : FlyingInsect(name, weight, lifespanDays, color, wingSpan), migratory(migratory) {
 }
 
-void Butterfly::move()
-{
-	cout << "flying";
+void Butterfly::move() const {
+    cout << "La mariposa vuela entre las flores.\n";
 }
 
-void Butterfly::makeSound()
-{
-	cout << "  ";
+void Butterfly::makeSound() const {
+    cout << "La mariposa no emite un sonido escuchable.\n";
 }
-void Butterfly::describe() {
-	cout << "\nInsecto volador" << "\n";
-	cout << "Nombre:" << name << "\n";
-	cout << "Peso: " << weight << "mg\n";
-	cout << "Dias de vida: " << lifespandDays << "\n";
-	cout << "Color: " << color << "\n";
-	cout << "Envergadura de las alas: " << wingSpan<<"\n";
-	cout << "Migra: Si\n";
 
-
+void Butterfly::describe() const {
+    cout << "Tipo: Mariposa\n";
+    FlyingInsect::describe();
+    cout << "Migratoria: " << (migratory ? "Si" : "No") << "\n";
+}

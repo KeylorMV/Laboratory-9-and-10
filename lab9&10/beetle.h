@@ -1,7 +1,6 @@
 #pragma once
 #include "Insect.h"
 
-// Clase concreta: la dureza del caparazon distingue al escarabajo.
 class Beetle : public Insect {
 private:
     int shellHardness;

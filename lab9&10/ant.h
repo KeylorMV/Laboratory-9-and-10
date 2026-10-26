@@ -1,7 +1,6 @@
 #pragma once
 #include "Insect.h"
 
-// Clase concreta: la capacidad de carga es propia de la hormiga.
 class Ant : public Insect {
 private:
     int carryCapacity;

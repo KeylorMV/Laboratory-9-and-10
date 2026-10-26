@@ -12,7 +12,7 @@ void Ant::move() const {
 }
 
 void Ant::makeSound() const {
-    cout << "La hormiga se comunica principalmente mediante senales quimicas.\n";
+    cout << "La hormiga se comunica mediante senales quimicas.\n";
 }
 
 void Ant::describe() const {
