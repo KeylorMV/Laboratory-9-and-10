@@ -16,7 +16,7 @@ void Butterfly::makeSound()
 void Butterfly::describe() {
 	cout << "\nInsecto volador" << "\n";
 	cout << "Nombre:" << name << "\n";
-	cout << "Peso: " << weight << "\n";
+	cout << "Peso: " << weight << "mg\n";
 	cout << "Dias de vida: " << lifespandDays << "\n";
 	cout << "Color: " << color << "\n";
 	cout << "Envergadura de las alas: " << wingSpan<<"\n";
