@@ -138,7 +138,7 @@ void addInsect(Colony& colony, bool atBeginning) {
         }
     }
     catch (...) {
-        // Colony takes ownership only after successful insertion.
+        
         delete insect;
         throw;
     }

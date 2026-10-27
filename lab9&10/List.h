@@ -106,7 +106,6 @@ public:
         return false;
     }
 
-    // Deletes nodes, not the objects stored through pointers.
     void clear() {
         while (head != nullptr) {
             Node<T>* temporary = head;
