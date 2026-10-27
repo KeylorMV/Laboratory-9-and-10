@@ -1,14 +1,25 @@
 #pragma once
-#include <cstddef>
 
 template <typename T>
 class Node {
-public:
+private:
     T data;
     Node<T>* next;
 
+public:
     explicit Node(const T& value)
         : data(value), next(nullptr) {}
+
+    T getData() const {
+        return data;
+    }
+
+    const Node<T>* getNext() const {
+        return next;
+    }
+
+    template <typename U>
+    friend class List;
 };
 
 template <typename T>
@@ -16,12 +27,11 @@ class List {
 private:
     Node<T>* head;
     Node<T>* tail;
-    std::size_t count;
+    int count;
 
 public:
     List() : head(nullptr), tail(nullptr), count(0) {}
 
-    // Evita copiar accidentalmente los mismos nodos.
     List(const List&) = delete;
     List& operator=(const List&) = delete;
 
@@ -33,8 +43,12 @@ public:
         return head == nullptr;
     }
 
-    std::size_t size() const {
+    int size() const {
         return count;
+    }
+
+    const Node<T>* getHead() const {
+        return head;
     }
 
     void insertFirst(const T& value) {
@@ -63,18 +77,6 @@ public:
         ++count;
     }
 
-    // Ejecuta una acción para cada dato de la lista.
-    template <typename Action>
-    void traverse(Action action) const {
-        const Node<T>* current = head;
-
-        while (current != nullptr) {
-            action(current->data);
-            current = current->next;
-        }
-    }
-
-    // Elimina la primera coincidencia. :)
     bool remove(const T& value) {
         Node<T>* current = head;
         Node<T>* previous = nullptr;
@@ -104,6 +106,7 @@ public:
         return false;
     }
 
+    // Deletes nodes, not the objects stored through pointers.
     void clear() {
         while (head != nullptr) {
             Node<T>* temporary = head;

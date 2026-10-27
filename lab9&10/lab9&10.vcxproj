@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -145,12 +145,15 @@
     <ClCompile Include="FlyingInsect.cpp" />
     <ClCompile Include="insect.cpp" />
     <ClCompile Include="lab9&amp;10.cpp" />
+    <ClCompile Include="colony.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ant.h" />
     <ClInclude Include="beetle.h" />
     <ClInclude Include="Butterfly.h" />
+    <ClInclude Include="colony.h" />
     <ClInclude Include="FlyingInsect.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="insect.h" />
   </ItemGroup>
   <ItemGroup>
